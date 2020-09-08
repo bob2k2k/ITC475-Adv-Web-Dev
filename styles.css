@@ -1,0 +1,134 @@
+/* Global */
+
+* {
+    margin:0;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-containers {
+    margin: 4% 2%;
+}
+
+.section-paragraph {
+    width: 50%;
+    line-height: 24px;
+    margin: 1% 0;
+}
+
+/* Header */
+.logo{
+    width:400px;
+}
+
+.logo-header{
+    background-color: #add8e6;
+    border-bottom: 25px solid #d3d3d3;
+}
+
+ul {
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin:0 1%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    cursor: pointer;
+}
+
+ul li .nav-element:hover{
+    color:#ffa500;
+    top: -5px;
+}
+
+nav .nav-element {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+/* Travel Packages Page */
+.resort-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resort-cards{
+    display: flex;
+    flex-direction: column;
+    width: 425px;
+    height: 550px;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.resort-cards:hover {
+    background-color: black;
+    color:white;
+}
+
+
+.resort-cards img {
+    align-self:center;
+    width: 90%;
+    margin-top: 4%;
+    
+}
+
+.prices-description{
+    margin-left: 4.75%;
+    margin-top: 5%;
+}
+
+.current-price{
+    color:gray;
+}
+
+.resort-cards .price-you-pay{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.price-savings{
+    color:green;
+}
+
+.resort-cards h1{
+    margin-bottom: 3%;
+}
+
+.resort-cards p{
+    line-height: 25px;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    color:white;
+}
+
+.footer-text {
+    padding: 1% 4%;
+}
+
+.footer-contact-info {
+    margin-top:.75%;
+}
+
