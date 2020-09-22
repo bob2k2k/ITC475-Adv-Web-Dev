@@ -30,9 +30,26 @@ p {
 
 .logo-header{
     background-color: #add8e6;
-    border-bottom: 25px solid #d3d3d3;
+    /* border-bottom: 25px solid #d3d3d3; */
 }
 
+.time-wrap{
+    display: flex;
+    background-color: #d3d3d3; 
+    align-items: center;
+}
+
+#time-container{
+    
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#time-image {
+    width: 30px;
+    margin-left: 10px;
+}
+ 
 ul {
     text-align: center;
     margin-top: 1.5%;
