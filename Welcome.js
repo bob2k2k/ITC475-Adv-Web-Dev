@@ -33,10 +33,11 @@ function setIcon() {
 }
 
 function setTimeContainer() {
+    setIcon();
     ReactDOM.render(React.createElement("div", null, React.createElement(setGreeting, null)), 
     document.getElementById("time-container"));
 }
-setIcon();
+
 setInterval(setTimeContainer, 1000);
 
 
