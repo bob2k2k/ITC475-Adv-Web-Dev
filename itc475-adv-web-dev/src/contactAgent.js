@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 import Activities from './activitiesSelector';
+import Form from './contactForm';
 
 
 class contactAgent extends React.Component{
@@ -14,8 +15,8 @@ class contactAgent extends React.Component{
              with a travel agent.
          </p>
         </section>
-
-        <Activities />
+        <Form />
+        {/* <Activities /> */}
 
     </div>
     );

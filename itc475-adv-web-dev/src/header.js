@@ -14,7 +14,6 @@ class header extends React.Component{
         <div class="time-wrap">
           <Welcome />
         </div>
-        {/* <Welcome /> */}
         <nav>
             <ul>
                 <li><a class="nav-element" onClick={this.showHome}>Home</a></li>
