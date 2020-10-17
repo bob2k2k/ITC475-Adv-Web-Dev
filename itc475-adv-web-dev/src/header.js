@@ -18,7 +18,7 @@ class header extends React.Component{
             <ul>
                 <li><a class="nav-element" onClick={this.showHome}>Home</a></li>
                 <li><a class="nav-element" onClick={this.showAboutUs}>About Us</a></li>
-                <li><a class="nav-element" onClick={this.showContactAgent}>Contact Agent</a></li>
+                <li><a class="nav-element" onClick={this.showContactAgent} href="#contact">Contact Agent</a></li>
             </ul>
         </nav>
     </div>

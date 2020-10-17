@@ -19,10 +19,12 @@ class contactForm extends React.Component{
         this.handleDataChanges = this.handleDataChanges.bind(this);
         this.handleActivityData = this.handleActivityData.bind(this);
         this.submitFormData = this.submitFormData.bind(this);
+        this.resetForm = this.resetForm.bind(this);
+
     }
     render(){
         return(
-            <form>
+            <form id="contact-form">
                 <div class = "form-wrapper">
                     <div class = "form-input-wrapper">
                         <label for = "first-name">First Name</label>
@@ -96,17 +98,11 @@ class contactForm extends React.Component{
                             <div><input type="checkbox" name="boating" value="Boating" onChange = {this.handleActivityData}></input><label for="boating">Boating</label></div>
                             <div><input type="checkbox" name="snorkling" value="Snorkling" onChange = {this.handleActivityData}></input><label for="snorkling">Snorkling</label></div>
                         </div>
-
                     </div>
-
                 </div>
-
                 <button class = "contact-form-button" type = "submit" onClick = {this.submitFormData}>Submit Form</button>
-                <button class = "contact-form-button" type = "submit" onClick = {this.clearFormData}>Clear Form</button>
-
-                
-
-            </form>
+                <button class = "contact-form-button" onClick={this.resetForm}>Clear Form</button>
+            </form> 
         )
     }
 
@@ -175,11 +171,10 @@ class contactForm extends React.Component{
           console.log(this.state);
       }
 
-      clearFormData(){
-          window.location.reload();
-          return false;
+
+      resetForm(){
+        window.location.reload();
       }
-       
 
 }
 
