@@ -6,6 +6,7 @@ import AboutUs from './aboutUs';
 import ContactAgent from './contactAgent';
 import Footer from './footer';
 import * as serviceWorker from './serviceWorker';
+import axios from 'axios';
 
 ReactDOM.render(
   <React.StrictMode>

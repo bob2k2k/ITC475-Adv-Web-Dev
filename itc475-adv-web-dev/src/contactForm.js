@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+import $ from 'jquery';
 
 
 
@@ -167,8 +168,39 @@ class contactForm extends React.Component{
       }
 
       submitFormData(e){
+          let that = this;
           e.preventDefault();
           console.log(this.state);
+
+        //   $.post('confirm.php', {data: this.state}, function(data){ 
+        //       console.log('done');
+        //   })
+
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost/confirm.php',
+            dataType: 'json',
+            data: that.state,
+            success: function(data){
+                console.log('YAY');
+
+            },
+            error: function(xhr, status, err){
+                console.log('error');
+                console.log(xhr);
+            }
+        })
+
+
+        // axios({
+        //     method: 'post',
+        //     url: `${'http://localhost/confirm.php'}`,
+        //     headers: { 'content-type': 'application/json' },
+        //     data: this.state
+        //   })
+        //     .catch(error => this.setState({ error: error.message }));
+        // };
+
       }
 
 
